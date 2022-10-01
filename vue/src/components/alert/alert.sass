@@ -1,0 +1,33 @@
+.xcore-alert--wrapper
+  display: flex
+  position: relative
+  overflow: hidden
+  flex-wrap: wrap
+  justify-content: flex-start
+  align-items: stretch
+
+  > .xcore-alert--content
+    position: relative
+    flex: 1 1 auto
+    width: 1%
+    min-width: 0
+
+    > .xcore-alert--header
+      display: flex
+      align-items: center
+      width: 100%
+      margin-bottom: 8px
+
+      > .xcore-alert--header__title
+        flex-grow: 1
+        font-size: 18px
+        font-weight: 600
+
+      > .xcore-alert--header__closable
+        flex: none
+        border-radius: 100%
+        cursor: pointer
+
+  > .xcore-alert--after,
+  > .xcore-alert--before
+    display: flex
